@@ -1,0 +1,66 @@
+.drone {
+    position: absolute;
+    left: 16px;
+    top: -12px;
+    width: 200px;
+    height: 56px;
+}
+.st0 {
+    fill: #ecf0f1;
+    stroke: #b7c4b1;
+    stroke-width: 4;
+}
+.st1 {
+    fill: #ffffff;
+}
+.st2,
+.st7 {
+    fill: #d8403a;
+}
+.st3 {
+    fill: #b7c4b1;
+}
+.st4 {
+    fill: #262223;
+}
+.st5 {
+    fill: #565950;
+}
+.st6 {
+    fill: #4e4a5b;
+}
+.st8 {
+    fill: #8c8e7e;
+}
+.pre-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: block;
+    background-color: #007ced;
+    background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
+}
+#clouds {
+    position: relative;
+    height: 51%;
+    background: url("assets/cloud.png");
+    background: url(assets/cloud.png) 0 200px, url(assets/cloud1.png) 0 300px, url(assets/cloud2.png) 100px 250px;
+    animation: wind 20s linear infinite;
+}
+#surface {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: block;
+    background: url("assets/brick-wall.jpg");
+}
+@keyframes wind {
+    0% {
+        background-position: 0 -200px, 0 -300px, -100px -250px;
+    }
+    100% {
+        background-position: -1000px -200px, -1200px -300px, -1100px -250px;
+    }
+}
